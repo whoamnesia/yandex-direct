@@ -21,7 +21,7 @@
 В Claude Code:
 
 ```
-/plugin marketplace add whoamnesia/astudio-yandex-direct
+/plugin marketplace add whoamnesia/yandex-direct
 /plugin install astudio-yandex-direct@astudio-yandex-direct
 ```
 

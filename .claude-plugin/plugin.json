@@ -16,7 +16,7 @@
     "astudio"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/whoamnesia/astudio-yandex-direct",
-  "repository": "https://github.com/whoamnesia/astudio-yandex-direct",
+  "homepage": "https://github.com/whoamnesia/yandex-direct",
+  "repository": "https://github.com/whoamnesia/yandex-direct",
   "icon": "./.claude-plugin/icon.png"
 }

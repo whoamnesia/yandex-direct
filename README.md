@@ -21,7 +21,7 @@ A plugin that makes an agent a careful PPC specialist for Yandex Direct: semanti
 In Claude Code:
 
 ```
-/plugin marketplace add whoamnesia/astudio-yandex-direct
+/plugin marketplace add whoamnesia/yandex-direct
 /plugin install astudio-yandex-direct@astudio-yandex-direct
 ```
 

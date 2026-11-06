@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-11-06",
+  "sources": {
+    "limits": "https://yandex.ru/support/direct/ru/moderation/technical-restrictions",
+    "operators": "https://yandex.ru/support/direct/ru/keywords/symbols-and-operators",
+    "tgo_migration": "https://ppc.world/news/direkt-obnovit-tekstovo-graficheskie-obyavleniya-do-kombinatornyh-v-edinoy-perfomans-kampanii/",
+    "pay_per_conversion": "https://yandex.com/support/direct/ru/strategies/average-cpa-conversions",
+    "learning": "https://yandex.ru/support/direct/ru/troubleshooting/conversions",
+    "max_profit": "https://ppc.world/news/direkt-vyvodit-iz-bety-strategiyu-maksimum-pribyli-s-novymi-funkciyami/",
+    "api_units": "https://yandex.ru/dev/direct/doc/ru/concepts/units",
+    "api_restrictions": "https://yandex.ru/dev/direct/doc/ru/restrictions",
+    "metrika_quotas": "https://yandex.ru/dev/metrika/ru/intro/quotas",
+    "ord": "https://b2b.yandex.ru/adv/edu/materials/ord",
+    "wordstat": "https://aistudio.yandex.ru/ru/docs/search-api/concepts/wordstat"
+  },
+  "ad": {
+    "title": {"max": 56, "word_max": 22, "count_in_combinatorial": 7},
+    "title2": {"max": 30, "word_max": 22, "status": "legacy: combinatorial ads in ЕПК have no second headline since July 2026; official page still lists it - verify before use"},
+    "text": {"max": 81, "narrow_max": 15, "word_max": 23, "count_in_combinatorial": 3, "narrow_chars": "!,.;:\""},
+    "display_link": {"max": 20},
+    "href": {"max": 1024},
+    "sitelink_title": {"max": 30, "total_1_4_max": 66, "total_1_4_status": "repo claim (ai-hub-open), not confirmed on an official page"},
+    "sitelink_description": {"max": 60},
+    "sitelinks": {"min_recommended": 4, "max": 8},
+    "callout": {"max": 25, "total_desktop": 132, "total_mobile": 76, "min_recommended": 3},
+    "images_min_recommended": 3,
+    "promo_text": {"max": 45}, "promo_code": {"max": 16}
+  },
+  "keywords": {"words_max": 7, "phrase_chars_max": 4096, "per_group_max": 200},
+  "negatives": {"group_chars_max": 4096, "campaign_chars_max": 20000, "words_max": 7, "chars_exclude_spaces": true},
+  "structure": {"ads_per_group_max": 50, "groups_per_campaign_max": 1000, "campaigns_per_account_max": 3000, "active_campaigns_max": 1000, "combinatorial_ads_per_group_max": 3},
+  "operators": {
+    "!": "fix word form", "+": "fix a stop word", "\"\"": "fix the number of words (any order)",
+    "[]": "fix word order", "()|": "alternatives", "-": "exclude a word"
+  },
+  "strategies": {
+    "pay_per_conversion": {"attribution_window_days": 21, "cpa_max_rub": 50000, "goals_max": 30, "weekly_budget_min_rub": 300, "weekly_budget_min_cpa_multiple": 10, "daily_period_budget_min_rub": 50},
+    "learning": {"conversions_per_week_min": 10, "weeks": [1, 2], "freeze_changes_weeks": [2, 3], "pause_restarts_days": 7, "freeze_status": "2-3 weeks and 7 days are practitioner rules (Silverov), not an official figure"},
+    "max_profit": {"out_of_beta": "2026-08-18"},
+    "weekly_rollover_share": 0.3,
+    "manual_yan_bids_disabled": "2024-07-01"
+  },
+  "api": {
+    "direct_parallel_max": 5, "failed_call_units": 20,
+    "reports_requests_per_10s_max": 20, "reports_queue_max": 5, "reports_kept_hours": 5,
+    "reports_query_days": 180, "reports_history_years": 3, "reports_goals_max": 10,
+    "attribution_models": ["AUTO", "LSCCD", "FCCD", "LC"],
+    "unified_write_endpoint": "/json/v501/", "money_unit": "micro (×1 000 000)",
+    "special_mode": "HTTP 204 on every call = API switched off by Yandex: stop, do not retry in a loop",
+    "metrika": {"per_day": 5000, "reports_per_5min": 200, "parallel": 3},
+    "wordstat": {"base": "https://searchapi.api.cloud.yandex.net/v2/wordstat/", "methods": ["topRequests", "dynamics", "regions", "getRegionsTree"], "legacy_forbidden": "api.wordstat.yandex.net/v1", "quota_status": "10 rps / 100 per hour per nebelov; verify on the quotas page"}
+  },
+  "marking": {
+    "erid": "Yandex ОРД assigns erid automatically for Direct; do not add it by hand",
+    "advertiser_data": "Direct → user menu → «Данные рекламодателя»: ИНН, type, name, ОКВЭД",
+    "fines_legal_entity_rub": [100000, 500000],
+    "russian_language_rule_from": "2026-03-01",
+    "russian_language_status": "secondary source (Silverov); check the text of the law"
+  },
+  "kpi": {
+    "CTR": "clicks / impressions × 100%", "CPC": "cost / clicks", "CR": "conversions / clicks × 100%",
+    "CPA": "cost / conversions", "ДРР": "cost / revenue × 100%", "ROMI": "(revenue − cost) / cost × 100%",
+    "rules": ["priority goals only, never the all-goals sum", "same closed window for numerator and denominator", "missing input = MISSING, never 0", "kill list: CPA > 3 × target CPA"]
+  }
+}

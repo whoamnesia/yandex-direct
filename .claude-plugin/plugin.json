@@ -1,0 +1,22 @@
+{
+  "name": "astudio-yandex-direct",
+  "version": "1.0.0",
+  "description": "Yandex Direct for Claude Code by astudio.one: semantics with negatives, ad copy within limits, ЕПК campaign structure, strategies, audit and weekly KPI reports - drafts only, nothing launched without approval.",
+  "author": {
+    "name": "astudio.one",
+    "url": "https://astudio.one"
+  },
+  "keywords": [
+    "yandex-direct",
+    "яндекс-директ",
+    "ppc",
+    "wordstat",
+    "metrika",
+    "ads",
+    "astudio"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/whoamnesia/astudio-yandex-direct",
+  "repository": "https://github.com/whoamnesia/astudio-yandex-direct",
+  "icon": "./.claude-plugin/icon.png"
+}
